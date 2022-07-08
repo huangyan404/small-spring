@@ -16,6 +16,12 @@ public class BeanFactory {
         return beanDefinitionMap.get(name).getBean();
     }
 
+    /**
+     * 注册bean定义
+     *
+     * @param name           名字
+     * @param beanDefinition bean定义
+     */
     public void registerBeanDefinition(String name, BeanDefinition beanDefinition) {
         beanDefinitionMap.put(name, beanDefinition);
     }
